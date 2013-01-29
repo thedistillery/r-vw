@@ -1,0 +1,123 @@
+@import 'reset.less';
+@import 'variables.less';
+@import 'fonts.less';
+
+
+
+
+
+/***************/
+/*** GENERAL ***/
+/***************/
+
+* { 
+	box-sizing: border-box; 
+}
+    
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 110%;
+	color: @green;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+
+a {
+	text-decoration: none;
+	color: @green;
+}
+
+a:hover {
+	border-bottom: 1px solid @green;
+}
+
+
+
+
+
+/***************/
+/*** CONTENT ***/
+/***************/
+
+header {
+	img {
+		display: block;
+		width: 260px;
+		height: 220px;
+		margin: 20px auto 40px auto;
+	}
+}
+
+article {
+	&.contact {
+		text-align: center;
+		
+		.steve, .bram {
+			width: 250px;
+			margin: 0 auto 20px auto;
+		}
+	}
+}
+
+
+
+
+
+/***************/
+/* RESPONSIVE */
+/***************/
+
+@media only screen and (width: 480px) and (height: 320px)
+{	
+	header {
+		img {
+			margin: 45px auto 45px auto;
+		}
+	}
+
+	&.contact {
+		width: 500px;
+	
+		.steve, .bram {
+			float: left;
+			padding: 100px 0;
+		}
+	}	
+}
+
+@media only screen and (width: 320px) and (height: 568px)
+{	
+	header {
+		img {
+			margin: 50px auto 50px auto;
+		}
+	}
+
+	&.contact {
+		width: auto;
+	
+		.steve, .bram {
+			width: 250px;
+			padding: 0;
+		}
+	}	
+}
+
+@media only screen and (width: 568px) and (height: 320px)
+{	
+	header {
+		img {
+			margin: 42px auto 42px auto;
+		}
+	}
+
+	&.contact {
+		width: 500px;
+		margin: 0 auto;
+	
+		.steve, .bram {
+			float: left;
+			padding: 100px 0;
+		}
+	}	
+}
