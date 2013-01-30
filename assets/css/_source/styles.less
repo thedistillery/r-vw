@@ -40,11 +40,11 @@ a:hover {
 /***************/
 
 header {
-	img {
+	embed {
 		display: block;
 		width: 260px;
 		height: 220px;
-		margin: 20px auto 40px auto;
+		margin: 100px auto 100px auto;
 	}
 }
 
@@ -53,8 +53,13 @@ article {
 		text-align: center;
 		
 		.steve, .bram {
+			embed {
+				display: block;
+				margin: 0 auto 15px auto;
+			}
+		
 			width: 250px;
-			margin: 0 auto 20px auto;
+			margin: 0 auto 30px auto;
 		}
 	}
 }
@@ -67,57 +72,14 @@ article {
 /* RESPONSIVE */
 /***************/
 
-@media only screen and (width: 480px) and (height: 320px)
+@media only screen and (min-width: 540px) 
 {	
-	header {
-		img {
-			margin: 45px auto 45px auto;
-		}
-	}
-
-	&.contact {
-		width: 500px;
-	
-		.steve, .bram {
-			float: left;
-			padding: 100px 0;
-		}
-	}	
-}
-
-@media only screen and (width: 320px) and (height: 568px)
-{	
-	header {
-		img {
-			margin: 50px auto 50px auto;
-		}
-	}
-
-	&.contact {
-		width: auto;
-	
-		.steve, .bram {
-			width: 250px;
-			padding: 0;
-		}
-	}	
-}
-
-@media only screen and (width: 568px) and (height: 320px)
-{	
-	header {
-		img {
-			margin: 42px auto 42px auto;
-		}
-	}
-
 	&.contact {
 		width: 500px;
 		margin: 0 auto;
 	
 		.steve, .bram {
 			float: left;
-			padding: 100px 0;
 		}
 	}	
 }

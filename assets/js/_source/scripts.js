@@ -1,5 +1,5 @@
 
-$(window).load(function() 
+$(window).load(function()
 {
 	// slideshow - pick one
 	var bgs = new Array("02.jpg", "03.jpg", "04.jpg");
@@ -7,8 +7,8 @@ $(window).load(function()
 	$("body").backstretch(["images/background/"+bg]);
 });
 
-$(document).ready(function() 
-{	
+$(document).ready(function()
+{
 	// ga tracking
 	$.ga.load("UA-37384503-1");
 });
